@@ -48,6 +48,6 @@ jobs:
       run: docker run -d -p 5000:5000 senthilnata1/github-actions-docker-java-app:0.0.2.Release
 
     - name: Test the application
-      run: curl http://localhost:5000/
+      run: curl --request GET --url http://localhost:5000
       
  
